@@ -13,6 +13,7 @@
 .star{
     color: #0065FC;
     font-size: 24px;
+    justify-content: flex-end;
 }
 .logo{
     height: 50px;
@@ -35,7 +36,7 @@
 
 }
 a:hover{
-    background-color: #F2F2F2;
+    background-color: #dae4f3;
     border-top: 1px solid #0065FC;
     transition-duration: 2s;
 }
@@ -63,7 +64,7 @@ input{
     height: 35px;
 }
 .first-btn:hover{
-    background-color: #F2F2F2;
+    background-color: #dae4f3;
 }
 .filter-container{
     display: flex;
@@ -76,6 +77,9 @@ input{
     margin: 0px 20px 0px 40px;
     border: 2px solid #F2F2F2;
     border-radius: 100px;
+}
+.filter-container div:hover{
+    background-color: #dae4f3;
 }
 .filter-container strong{
     padding: 10px 0px 8px 0px;
@@ -123,6 +127,7 @@ input{
     background-color: #FFFF;
     border-radius: 20px;
 }
+
 .popular-container{
     border-radius: 20px;
     width: 30vw;
@@ -149,6 +154,11 @@ input{
     padding: 5px 5px 5px 5px;
     background-color: #FFFF;
     border-radius: 20px;
+}
+figure:hover{
+    transform: scale(1.1);
+    background-color: #dae4f3;
+    transition-duration: 2s;
 }
 .activity-container{
     width: 100vw;
@@ -348,6 +358,11 @@ footer div span{
         padding: 5px 5px 5px 5px;
         background-color: #FFFF;
         border-radius: 20px;
+    }
+    figure:hover{
+        transform: scale(1.1);
+        background-color: #dae4f3;
+        transition-duration: 2s;
     }
     .activity-container{
         width: auto;
