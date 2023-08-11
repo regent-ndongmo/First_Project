@@ -8,29 +8,29 @@
     <link rel="stylesheet" href="images/fontawesome-free-6.4.2-web/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <img class="logo" src="images/logo/Booki@3x.png" alt="Mon logo">
-            <div class="nav-links">
-                <ul class="option">
-                    <li class="nav-item"><a class="nav-links" href="#hebergement">Hebergements</a></li>
-                    <li class="nav-item"><a class="nav-links" href="#activity">Activites</a></li>
-                </ul>
-            </div>
+    <header class="header">
+        <img class="logo" src="images/logo/Booki@3x.png" alt="Mon logo">
+        <nav class="headerNav">
+            <a class="nav-link" href="#hebergement" data-active="true">Hebergements</a>
+            <a class="nav-link" href="#activity" data-active="false">Activites</a>
         </nav>
     </header>
+
     <main id="container">
         <section class="container">
             <div class="first-container">
                 <strong>Trouver votre hebergement pour des vacances de reve</strong><br>
                 <p>En plein centre de ville ou en plein nature</p><br>
             </div>
-        
-            <form action="#" method="post" class="search">
-                    <label for="ville"><img src="images/font/brands/periscope.svg" class="logo-ville" height="30px" alt="ville"></label>
-                    <input type="text" name="ville" id="ville" value="Marseille, France">
-                    <input type="submit" class="first-btn" value="Rechercher">
-                </div>
+            <form class="searchForm" action="#" method="post">
+                <span class="search-icon">
+                  <i class="fas fa-map-marker-alt search-iconp"></i>
+                </span>
+                <input class="search-input" type="search" placeholder="Ouest, Cameroun" size="1" />
+                <button class="submit-input">
+                  <span class="submit-input-Text">Rechercher</span>
+                  <i class="submit-input-Icon fas fa-search"></i>
+                </button>
             </form><br>
             <!-- Zone pour les filtres -->
             
@@ -180,58 +180,64 @@
         <section class="activity-container" id="activity">
             <strong>Activites a Marseille</strong>
             <div class="img-container">
-                <div class="item-1">
+                <a href="#">
                     <figure>
                         <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="activity 1">
                         <figcaption><strong>Vieux Port</strong></figcaption>
                     </figure>
-                </div>
+                </a>
                 <div class="item-2">
+                <a href="#">
                     <figure>
                         <img src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="activity 2">
                         <figcaption><strong>Fort de Pomegues</strong></figcaption>
                     </figure>
+                </a>
+                <a href="#">
                     <figure>
                         <img src="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="activity 3">
                         <figcaption><strong>Iles du Frioul</strong></figcaption>
                     </figure>
-                </div>
-                <div class="item-1">
+                </a>
+                <a href="#">
                     <figure>
                         <img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="activity 4">
                         <figcaption><strong>Parc National des Calenques</strong></figcaption>
                     </figure>
-                </div>
-                <div class="item-2">
+                </a>            
+                <a href="#">
                     <figure>
                         <img src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="activity 5">
                         <figcaption><strong>Notre-Dame-de-la-Garde</strong></figcaption>
                     </figure>
+                </a>
+                <a href="#">
                     <figure>
                         <img src="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="activity 6">
                         <figcaption><strong>Parc Longchamp</strong></figcaption>
                     </figure>
-                </div>
+                </a>
+                
             </div>
         </section>
     </main>
 
     <footer>
         <div>
-            <strong>A propos</strong><br><br>
-            <span>Fonctionnement du site</span><br>
-            <span>Conditions generales de vente</span><br>
-            <span>Donnees et Confidentialite</span><br>
+            <h3>A propos</h3>
+            <a href="#" class="footer-links">Fonctionnement du site</a><br>
+            <a href="#" class="footer-links">Conditions generales de vente</a><br>
+            <a href="#" class="footer-links">Donnees et Confidentialite</a><br>
         </div>
         <div>
-            <strong>Nos hebergements</strong><br><br>
-            <span>Charte qualite</span><br>
-            <span>Soumettre votre hotel</span><br>
+            <h3>Nos hebergement</h3>
+            <a href="#" class="footer-links">Charte qualite</a><br>
+            <a href="#" class="footer-links">Soumettre votre hotel</a><br>
         </div>
         <div>
-            <strong>Assistance</strong><br><br>
-            <span>Centre d'aide</span><br>
-            <span>Nous contacter</span><br>
+            <h3>Assistance</h3>
+            <a href="#" class="footer-links">Centre d'aide</a><br>
+            <a href="#" class="footer-links">Nous contacter</a><br>
         </div>
     </footer>
 </body>
