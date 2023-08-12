@@ -6,7 +6,7 @@
     font-family: 'Raleway';
     padding: 0px 0px 20px 20px;
     margin: 0px 0px 20px 20px;
-    flex: 1;       /* Occupe tout l'espace disponible restant entre l'en-tete et le pied de page. */
+    /* flex: 1;       Occupe tout l'espace disponible restant entre l'en-tete et le pied de page. */
 
 }
 
@@ -20,34 +20,37 @@ a{
     text-decoration: none;
 }
 .header{
-    display: grid;
+    display: flex;
     /* align-items: center; */
     max-width: 1440px;
     margin: auto;
+    justify-content: space-between;
 }
 .logo{
-    grid-area: logo;
-    padding: 0 2rem;
-    height: 2.813rem;
+    height: 3rem;
+    margin-top: 1rem;
+    width: auto;
 }
 .headerNav{
     display: flex;
-    align-items: center;
-    grid-area: navbar;
+    
 }
 .nav-link{
-    padding: 2rem;
+    padding: 2rem 2rem 0rem 2rem;
     font-weight: 500;
-    text-align: center;
+    text-align: left;
     transition-duration: 0.1s;
     border-top: 3px transparent solid;
     border-bottom: 3px transparent solid;
 }
 .nav-link[data-active=true] {
     color: #0065FC;
+    border-top: 2px solid blue;
 }
 .nav-link:hover {
     color: #0065FC;
+    background-color: #dae4f3;
+    border-top: 2px solid blue;
 }
 
 .searchForm {
@@ -143,14 +146,16 @@ a{
 .hebergement-container .img-container{
     display: flex;
     position: relative;
+    width: 100%;
     flex-wrap: wrap;
     flex-grow: initial;
     border-radius: 20px 20px 20px 20px;
 }
 .hebergement-container figure{
     height: auto;
-    width: 24%;
+    width: 25%;
     padding: 5px 5px 0px 5px;
+    margin: 5px 20px 20px 40px;
     background-color: #FFFF;
     border-radius: 20px;
 }
@@ -183,56 +188,61 @@ a{
     border-radius: 20px;
 }
 figure:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
     background-color: #dae4f3;
     transition-duration: 2s;
 }
 .activity-container{
-    width: 100vw;
-    height: 200%;
+    display: grid;
+    grid-template-rows: auto;
+    column-gap: 2rem;
+    margin: 4rem 0;
 }
-.activity-container .img-container{
+.activity-container a{
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-}
-.activity-container .img-container figure{
-    border-radius: 10px;
-    height: 50%;
-    box-shadow: 5px 5px 5px #F2F2F2;
-
-
-}
-.activity-container .img-container figure img{
-    border-radius: 10px 10px 0px 0px;
-    height: 15vh;
-    width: 19vw;
-    flex-wrap: nowrap;
-    
-}
-.activity-container .img-container .item-1 figure img{
-    height: 300px;
-    box-shadow: 5px 5px 5px #F2F2F2;
-}
-.activity-container .img-container .item-2{
     flex-direction: column;
+    transition-duration: 0.1s;
+} */
+/*
+.activity-container .img-container a figure {
+    position: relative;
+    flex: 1;
 }
+.activity-container .img-container a figure img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} */
 
-
-footer{
+  
+.footer {
     background-color: #F2F2F2;
-    height: 20vh;
-    width: 100vw;
+    width: 100%;
+  }
+.footer-container {
     display: flex;
-    justify-content: space-around;
-    padding: 40px 0px 40px 0px;
+    max-width: 100%;
+    width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
 }
-footer div span{
+.footer .footer-container div {
+    width: 30%;
+    padding: 1rem 2rem;
+}
+.footer-links{
     display: block;
 }
+.footer-links:hover {
+    text-decoration: underline;
+}
 
-@media only screen and (max-width: 900px) {
+/*@media only screen and (max-width: 900px) {
     #container{
         padding: 0px 0px 20px 20px;
         margin: 0px 0px 20px 20px;
@@ -304,7 +314,7 @@ footer div span{
     }
     .filter-container div{
         padding: 0px 60px 0px 0px;
-        /* background-color: #0065FC; */
+        /* background-color: #0065FC;
         margin: 0px 20px 0px 40px;
         border: 2px solid #F2F2F2;
         border-radius: 100px;
@@ -354,7 +364,7 @@ footer div span{
         height: 25%;
         width: 80%;
         padding: 5px 5px 0px 5px;
-        /* background-color: #F2F2F2; */
+        /* background-color: #F2F2F2; 
         border-radius: 20px;
         border: 2px solid #F2F2F2;
     }
