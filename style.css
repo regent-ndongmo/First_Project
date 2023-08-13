@@ -478,6 +478,19 @@ figure:hover{
         padding: 8px;
         background-color: #dbe3ee;
     }
+    .popular-container figure{
+        display: flex;
+        height: 20vh;
+        width: 80%;
+        padding: 5px 5px 5px 5px;
+        background-color: #FFFF;
+        border-radius: 20px;
+    }
+    figure:hover{
+        transform: scale(1.1);
+        background-color: #dae4f3;
+        transition-duration: 2s;
+    }
     .footer {
         background-color: #F2F2F2;
         width: 100%;
@@ -500,5 +513,20 @@ figure:hover{
     }
     .footer-links:hover {
         text-decoration: underline;
+    }
+}
+@media screen and (max-width: 500px) {
+    .popular-container figure{
+        display: flex;
+        height: 20vh;
+        width: 70%;
+        padding: 5px 5px 5px 5px;
+        background-color: #FFFF;
+        border-radius: 20px;
+    }
+    figure:hover{
+        transform: scale(1.1);
+        background-color: #dae4f3;
+        transition-duration: 2s;
     }
 }
