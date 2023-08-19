@@ -269,9 +269,42 @@ a{
 #Activités_à_Marseille h2 {
     font-size: medium;
 }
+.activity-container .img-container .activity-img{
+    height: 20vh;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
 .activity-container{
     display: none;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    margin: 30px 30px 0px 0px;
+    background-color: #FFF;
+    position: relative;
 }
+.activity-container .header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.activity-container .img-container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-grow: initial;
+    border-radius: 20px 20px 20px 20px;
+}
+.activity-container figure{
+    height: auto;
+    width: 25%;
+    padding: 5px 5px 10px 5px;
+    margin: 5px 20px 20px 40px;
+    background-color: #FFFF;
+    border-radius: 20px;
+}
+
 
 .footer {
     background-color: #F2F2F2;
@@ -298,10 +331,6 @@ a{
 @media screen and (max-width: 1300px) {
     #Activités_à_Marseille {
         display: none;
-        /* flex-direction: column;
-        flex-wrap: wrap;
-        margin-bottom: 60px;
-        max-width: 1200px; */
     }
     .activity-container{
         display: block;
