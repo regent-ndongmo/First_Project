@@ -39,6 +39,7 @@ a{
 
 .headerNav{
     display: flex;
+    margin-right: 40px;
     
 }
 .nav-link{
@@ -111,7 +112,7 @@ a{
 .filter-container{
     display: flex;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 30px 0 30px 0;
 }
 .filter-container div{
     padding: 0px 60px 0px 0px;
@@ -151,10 +152,10 @@ a{
     background-color: #F2F2F2;
     position: relative;
 }
-.hebergement-container .header{
+.hebergement-container .header-container{
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 20px 20px 20px 40px;
 }
 .hebergement-container .img-container{
     display: flex;
@@ -187,10 +188,10 @@ a{
     border-radius: 20px 0px 0px 20px;
     
 }
-.popular-container .header{
+.header-container{
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 20px 40px 20px 40px;
 }
 .popular-container figure{
     display: flex;
@@ -207,6 +208,9 @@ a{
     flex-wrap: wrap;
     margin-bottom: 60px;
     max-width: 1350px;
+}
+.popular-container .img-container1{
+    display: none;
 }
 
 .titre_activites {
@@ -283,11 +287,6 @@ a{
     background-color: #FFF;
     position: relative;
 }
-.activity-container .header{
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-}
 .activity-container .img-container{
     display: flex;
     position: relative;
@@ -347,7 +346,7 @@ a{
         border-radius: 20px;
         width: 100%;
         height: auto;
-        margin: 30px 30px 0px 0px;
+        margin: 30px 30px 30px 0px;
         background-color: #FFF;
         position: relative;
     }
@@ -366,15 +365,187 @@ a{
     }
     .activity-container figure{
         height: auto;
-        width: 25%;
+        width: 27%;
         padding: 5px 5px 10px 5px;
         margin: 5px 20px 20px 40px;
         background-color: #FFFF;
         border-radius: 20px;
     }
+    .second-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hebergement-container{
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+        margin: 0 0 0 0;
+        background-color: #F2F2F2;
+        position: relative;
+    }
+    .hebergement-container .header-container{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 20px 20px 40px;
+    }
+    .hebergement-container .img-container{
+        display: flex;
+        position: relative;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-grow: initial;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .hebergement-container figure{
+        height: auto;
+        width: 27%;
+        padding: 5px 5px 0px 5px;
+        margin: 5px 20px 20px 40px;
+        background-color: #FFFF;
+        border-radius: 20px;
+    }
+    
+    .popular-container{
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+        display: block;
+        background-color: #F2F2F2;
+    
+    }
+    .popular-container .img-container{
+        display: none;
+    }
+    .popular-container .img-container1{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-right: 50px;
+    }
+    .popular-container .img-container1 a{
+        margin: 10px 0px 10px 40px;
+        width: 30%;
+    }
 
+    .popular-container .img-container1 .popular-figure{
+        display: flex;
+        height: 23vh;
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #FFF;
+        box-shadow: 0 0 20px #0000002e;
+        border: 2px solid #0000002e;
+        border-radius: 20px;
+        margin-right: 0px;
+    }
+    .popular-container .img-popular{
+        width: 18vw;
+        border-radius: 20px 0px 0px 20px;
+        
+    }
+    .popular-container .header-container{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 50px 20px 40px;
+    }
 }
 @media screen and (max-width: 1000px) {
+    .second-container{
+        display: flex;
+    }
+    
+    .hebergement-container .img-heb{
+        height: 15vh;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .hebergement-container{
+        border-radius: 20px;
+        width: 70%;
+        height: auto;
+        margin: 0px 30px 0px 0px;
+        background-color: #F2F2F2;
+        position: relative;
+    }
+    .hebergement-container .header-container{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 20px 20px 40px;
+    }
+    .hebergement-container .img-container{
+        display: flex;
+        position: relative;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-grow: initial;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .hebergement-container figure{
+        height: auto;
+        width: 25%;
+        padding: 5px 5px 0px 5px;
+        margin: 5px 20px 20px 40px;
+        background-color: #FFFF;
+        border-radius: 20px;
+    }
+    .popular-container .img-container1{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 50px;
+    }
+    .popular-container .img-container1 a{
+        margin: 10px 0px 10px 40px;
+        width: 45%;
+    }
+
+    .popular-container .img-container1 .popular-figure{
+        display: flex;
+        height: 20vh;
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #FFF;
+        box-shadow: 0 0 20px #0000002e;
+        border: 2px solid #0000002e;
+        border-radius: 20px;
+        margin-right: 0px;
+    }
+    .popular-container .popular-figure .img-popular{
+        width: 50%;
+        border-radius: 20px 0px 0px 20px;
+        
+    }
+    .popular-container .header-container{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 50px 20px 40px;
+    }
+    
+    /* .popular-container{
+        border-radius: 20px;
+        width: 30vw;
+        height: 80vh;
+        display: table;
+        flex-wrap: nowrap;
+        background-color: #F2F2F2;
+    
+    }
+    .popular-container .img-popular{
+        width: 15vw;
+        border-radius: 20px 0px 0px 20px;
+        
+    }
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 40px 20px 40px;
+    }
+    .popular-container figure{
+        display: flex;
+        height: 20vh;
+        width: 25;
+        padding: 5px 5px 5px 5px;
+        background-color: #FFFF;
+        border-radius: 20px;
+    } */
     .activity-container .img-container{
         display: flex;
         position: relative;
@@ -613,7 +784,6 @@ a{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        padding: 30px;
     }
     .filter-container div{
         padding: 0px 60px 0px 0px;
@@ -623,7 +793,7 @@ a{
     }
     .filter-container strong{
         padding: 10px 0px 8px 0px;
-    }
+    }   
     .filter-container div span{
         border: 1px solid #F2F2F2;
         border-radius: 100%;
