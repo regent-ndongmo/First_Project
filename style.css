@@ -24,7 +24,6 @@ a{
 .header{
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     max-width: 1440px;
     margin: auto;
     justify-content: space-between;
@@ -410,6 +409,7 @@ a{
         width: 100%;
         height: auto;
         display: block;
+        margin-bottom: 20px;
         background-color: #F2F2F2;
     
     }
@@ -518,34 +518,6 @@ a{
         justify-content: space-between;
         margin: 20px 50px 20px 40px;
     }
-    
-    /* .popular-container{
-        border-radius: 20px;
-        width: 30vw;
-        height: 80vh;
-        display: table;
-        flex-wrap: nowrap;
-        background-color: #F2F2F2;
-    
-    }
-    .popular-container .img-popular{
-        width: 15vw;
-        border-radius: 20px 0px 0px 20px;
-        
-    }
-    .header-container{
-        display: flex;
-        justify-content: space-between;
-        margin: 20px 40px 20px 40px;
-    }
-    .popular-container figure{
-        display: flex;
-        height: 20vh;
-        width: 25;
-        padding: 5px 5px 5px 5px;
-        background-color: #FFFF;
-        border-radius: 20px;
-    } */
     .activity-container .img-container{
         display: flex;
         position: relative;
@@ -561,6 +533,34 @@ a{
         margin: 5px 20px 20px 40px;
         background-color: #FFFF;
         border-radius: 20px;
+    }
+}
+@media screen and (max-width: 993px) {
+    .popular-container .img-container1{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 50px;
+    }
+    .popular-container .img-container1 a{
+        margin: 10px 0px 10px 40px;
+        width: 100%;
+    }
+
+    .popular-container .img-container1 .popular-figure{
+        display: flex;
+        height: 25vh;
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #FFF;
+        box-shadow: 0 0 20px #0000002e;
+        border: 2px solid #0000002e;
+        border-radius: 20px;
+        margin-right: 0px;
+    }
+    .popular-container .popular-figure .img-popular{
+        width: 50%;
+        border-radius: 20px 0px 0px 20px;
+        
     }
 }
 
