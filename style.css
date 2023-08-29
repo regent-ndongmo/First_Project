@@ -31,7 +31,7 @@ a{
 .logo{
     height: 4rem;
     margin-top: 1rem;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     margin-bottom: 2rem;
     width: auto;
 }
@@ -165,6 +165,7 @@ a{
     border-radius: 20px 20px 20px 20px;
 }
 .hebergement-container figure{
+    box-shadow: 0 0 15px #0000002e;
     height: auto;
     width: 25%;
     padding: 5px 5px 0px 5px;
@@ -193,6 +194,7 @@ a{
     margin: 20px 40px 20px 40px;
 }
 .popular-container figure{
+    box-shadow: 0 0 15px #0000002e;
     display: flex;
     height: 20vh;
     width: 25;
@@ -295,6 +297,7 @@ a{
     border-radius: 20px 20px 20px 20px;
 }
 .activity-container figure{
+    box-shadow: 0 0 15px #0000002e;
     height: auto;
     width: 25%;
     padding: 5px 5px 10px 5px;
@@ -327,6 +330,7 @@ a{
     text-decoration: underline;
 }
 @media screen and (max-width: 1300px) {
+    
     #Activités_à_Marseille {
         display: none;
     }
@@ -426,6 +430,9 @@ a{
         margin: 10px 0px 10px 40px;
         width: 30%;
     }
+    .container, header, footer{
+        max-width: 90%;
+    }
 
     .popular-container .img-container1 .popular-figure{
         display: flex;
@@ -439,7 +446,7 @@ a{
         margin-right: 0px;
     }
     .popular-container .img-popular{
-        width: 18vw;
+        width: 13vw;
         border-radius: 20px 0px 0px 20px;
         
     }
@@ -684,7 +691,9 @@ a{
     .grid1{
         padding-left: 20%;
     }
-    
+    .footer{
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -801,7 +810,7 @@ a{
     }
     .activity-container figure{
         height: auto;
-        width: 100%;
+        width: 80%;
         padding: 5px 5px 10px 5px;
         margin: 5px 20px 20px 40px;
         background-color: #FFFF;
